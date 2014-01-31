@@ -19,6 +19,13 @@ Or install it yourself as:
 ## Usage
 
 Jacky will create a yaml file to store your normal configuration data in config/config.yml and your private passwords access codes from config/keys.yml
+Access your settings like below
+
+~~~ruby
+  Jacky.config.some_property_name   #comes from config/config.yml
+  Jacky.keys.some_api_key           #comes from config/keys.yml
+  Jacky::Git.version                #gives you a version flag like '2014.01.31.d21032c'
+~~~
 
 ## Contributing
 

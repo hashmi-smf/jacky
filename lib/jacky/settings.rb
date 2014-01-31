@@ -28,8 +28,14 @@ module Jacky
     end
 
     def initialize
-      @config = StoreWrapper.new(YAML::Store.new(File.join(Dir.pwd, "config/config.yml")))
-      @keys   = StoreWrapper.new(YAML::Store.new(File.join(Dir.pwd, "config/keys.yml")))
+      @config = open_store("config/config.yml")
+      @keys   = open_store("config/keys.yml")
+    end
+
+    private
+    def open_store(path)
+      path = Rails.root.join(path)
+      StoreWrapper.new(YAML::Store.new(path))
     end
 
   end

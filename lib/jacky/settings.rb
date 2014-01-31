@@ -40,7 +40,9 @@ module Jacky
 
   end
 
-  @settings = Settings.instance
+  def self.config_init
+    @settings = Settings.instance
+  end
 
   def self.config
     @settings.config

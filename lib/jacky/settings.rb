@@ -40,16 +40,16 @@ module Jacky
 
   end
 
-  def self.config_init
+  def self.settings
     @settings = Settings.instance
   end
 
   def self.config
-    @settings.config
+    settings.config
   end
 
   def self.keys
-    @settings.keys
+    settings.keys
   end
 
 end

@@ -1,10 +1,9 @@
 module Jacky
   class Railtie < Rails::Railtie
     initializer "jacky.init" do
+      #preload these
       Jacky::Git.version
-      Jacky.config_init
+      Jacky.settings
     end
   end
 end
-
-

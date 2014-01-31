@@ -8,9 +8,9 @@ Gem::Specification.new do |spec|
   spec.version       = Jacky::VERSION
   spec.authors       = ["Khaja Minhajuddin"]
   spec.email         = ["minhajuddin@cosmicvent.com"]
-  spec.summary       = %q{TODO: Write a short summary. Required.}
-  spec.description   = %q{TODO: Write a longer description. Optional.}
-  spec.homepage      = ""
+  spec.summary       = %q{Commonly used code in my rails apps}
+  spec.description   = %q{Includes a settings manager}
+  spec.homepage      = "http://minhajuddin.com/projects/jacky"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)

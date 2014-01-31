@@ -1,5 +1,5 @@
 require "jacky/version"
+require "jacky/settings"
 
 module Jacky
-  # Your code goes here...
 end
